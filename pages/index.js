@@ -1,7 +1,8 @@
-import { BaseLayout } from "@components/layout";
-import { Hero } from "@components/common";
-import { CourseList } from "@components/course";
+import { BaseLayout } from "@components/ui/layout";
+import { Hero } from "@components/ui/common";
+import { CourseList } from "@components/ui/course";
 import { getAllCourse } from "@content/courses/fetcher";
+import { useWeb3 } from "@components/providers";
 
 export default function Home({courses}) {
   return (
